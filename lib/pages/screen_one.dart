@@ -16,10 +16,22 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Get.snackbar("Avijit Das", "I am your boss");
+          Get.snackbar(
+            "",
+            "",
+            titleText: Center(
+              child: Text(
+                "Avijit Das",
+                style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+              ),
+            ),
+            messageText: Center(child: Text("I am your boss")),
+          );
           //use all widgets for more design
         },
+        child: Icon(Icons.person),
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       appBar: AppBar(title: Text("GetX")),
       body: Container(
         padding: EdgeInsets.all(10.0),
