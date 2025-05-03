@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/get_navigation.dart';
-import 'package:getx_state_management/pages/home_page.dart';
+import 'package:getx_state_management/pages/screen_one.dart';
 
 void main(){
   runApp(MyApp());
